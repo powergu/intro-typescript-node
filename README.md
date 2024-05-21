@@ -1,4 +1,4 @@
-# Workshop - Node / Express / Typescript - Intro
+# Workshop - Node / Express / Typescript
 
 Para visualizar o projeto navegue pelas branchs que representam cada etapa do desenvolvimento
 

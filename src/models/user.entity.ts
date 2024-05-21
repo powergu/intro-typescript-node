@@ -1,6 +1,7 @@
 import { Entity, BaseEntity, PrimaryGeneratedColumn, Column, OneToMany, Unique } from 'typeorm'
 import Token from './token.entity'
 import Task from './task.entity'
+import Endereco from './endereco.entity'
 
 @Entity()
 @Unique(["email"])
@@ -21,5 +22,8 @@ export default class User extends BaseEntity {
   tokens!: Token[]  
 
   @OneToMany(() => Task, task => task.user)
-  tasks!: Task[]  
+  tasks!: Task[] 
+  
+  @OneToMany(() => Endereco, endereco => endereco.user)
+  enderecos!: Endereco[]
 }
