@@ -1,0 +1,6 @@
+.inputFatec {
+    color: red;
+}
+input::placeholder {
+    color: red; /* Substitua por qualquer cor desejada */
+  }
